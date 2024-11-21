@@ -4,7 +4,7 @@ We strive to provide high-quality rules, but this repository comes with no warra
 
 ## Important
 
-No rule should be committed to the `main` branch. Rules must be committed to branches corresponding to the Kunai version for which they are intended.
+No rule should be committed to the `main` branch. Rules must be committed to branches corresponding to the Kunai version for which they are intended. Having separated branches corresponding to different Kunai version brings structure to the repository and simplifies CI/CD rule testing.
 
 ## Creating Rules
 
