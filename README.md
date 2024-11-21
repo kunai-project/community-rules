@@ -17,7 +17,7 @@ graph TD
     G --> H[PR with rule and trace]
 ```
 
-**IMPORTANT:** it is accepted to have **false positives** for rules with a severity in **[1;5]** as those are not considered as suspicious but are here to stack up.
+**IMPORTANT:** it is accepted to have **false positives** for rules with a severity in **[1;5]** as those are considered as suspicious but are here to stack up.
 
 ## Documenting Rules
 
