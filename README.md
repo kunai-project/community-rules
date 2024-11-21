@@ -1,0 +1,47 @@
+# Guidelines
+
+## Disclaimer
+
+We strive to provide high-quality rules, but this repository comes with no warranty. The effectiveness of these rules may vary depending on your environment. Some rules may result in **false positives**, while others might miss certain detections (false negatives).
+
+## Creating Rules
+
+```mermaid
+graph TD
+    A[Generate a kunai trace to work on] --> B[Write/modify detection rules following documentation]
+    B --> C[Test your rule with kunai replay command]
+    C --> D{Satisfied with the rule?}
+    D -- No --> B
+    D -- Yes --> E[Document]
+    E --> F[PR with rule and trace]
+```
+
+**Document your rules**: rules not documented properly **will not be merged** to the repo. Here are the **minimal documentation** required to have rules accepted in the repo.
+* **tags**: at least `'os:linux'`
+* **authors**: at least one
+* **attack**: at least one
+* **comments**:
+    * at least one comment to tell what the rule tries to catch
+    * at least something that help **cross-referencing** your rules (hash, url to a threat report ...)
+
+## Rule Severity
+
+Severity is used to encode the importance of an event matching the rule. Following are some important points about detection rules:
+
+- **Severities are cumulative so if one event matches two rules the severities will be added**. This is a great way to encode some suspicious things that may stack up.
+- **Maximum severity** is always bounded to **10** (even when stacking up)
+- [1;5]: this is suspicious use different value to graduate "suspiciousness"
+- **6: Moderate Impact**  
+  Events that might indicate a compromised or abnormal state but don’t immediately pose a significant risk. These could involve unusual but non-critical activities that require investigation.
+
+- **7: Elevated Risk**  
+  Events that show signs of active exploitation or system abuse. While not immediately critical, these events could potentially evolve into a more serious breach if left unaddressed.
+
+- **8: High Impact**  
+  Events that suggest that an attacker is gaining deeper access or that systems may be under direct attack. Immediate attention is required to prevent further escalation.
+
+- **9: Severe Threat**  
+  Events that indicate near-absolute certainty of a compromise or attack with potential damage to critical systems. This requires rapid response and investigation.
+
+- **10: Critical**  
+  Maximum severity, indicating a full compromise or ongoing active attack that could result in substantial data loss, downtime, or other catastrophic effects. Immediate intervention is necessary to contain and mitigate the threat.
