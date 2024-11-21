@@ -2,6 +2,10 @@
 
 We strive to provide high-quality rules, but this repository comes with no warranty. The effectiveness of these rules may vary depending on your environment. Some rules may result in **false positives**, while others might miss certain detections (false negatives).
 
+## Important
+
+No rule should be committed to the `main` branch. Rules must be committed to branches corresponding to the Kunai version for which they are intended.
+
 ## Creating Rules
 
 ```mermaid
