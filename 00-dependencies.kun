@@ -40,8 +40,8 @@ meta:
     comments:
         - identifies exe located in tmpfs
 matches:
-    $a: .data.ancestors ~= '\|(/tmp/|/dev/shm/|/run/|/var/(run|lock)/)\|?'
-    $p: .data.exe.path ~= '^(/tmp/|/dev/shm/|/run/|/var/(run|lock)/)'
+    $a: .data.ancestors ~= '\|{{tmpfs-dir}}\|?'
+    $p: .data.exe.path ~= '^{{tmpfs-dir}}'
 # $a is the slowest so run last
 condition: $p or $a
 
@@ -73,7 +73,7 @@ match-on:
     events:
         kunai: [write , write_close]
 matches:
-    $p: .data.path ~= '(/(s?bin|lib)/|/usr/(s?bin|lib)/|/proc/|/boot/)' 
+    $p: .data.path ~= '{{important-dir}}' 
 # $a is the slowest so run last
 condition: any of them
 
@@ -104,6 +104,6 @@ meta:
     comments:
         - suspicious commands touching sensitive directories
 matches:
-    $target: .data.command_line ~= '\s(/(s?bin|lib)/|/usr/(s?bin|lib)/|/proc/|/boot/)[^\s]*$'
+    $target: .data.command_line ~= '\s{{important-dir}}[^\s]*$'
 condition: all of them
 
