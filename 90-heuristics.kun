@@ -1,0 +1,136 @@
+# This file contains detection heuristics. These aims at 
+# being uwanted things based on what we believe is bad.
+# Those might be of high severity or low severity. 
+
+name: so.error
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1070 ]
+    authors: [ qjerome ]
+    comments:
+        - shared object loaded and modified/deleted quickly
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ mmap_exec ]
+matches:
+    $e: .data.mapped.error is some
+condition: $e
+severity: 8
+
+--- 
+
+name: exe.error
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1070 ]
+    authors: [ qjerome ]
+    comments:
+        - executable modified/deleted quickly
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $e: .data.exe.error is some
+    $e2: .data.interpreter.error is some
+condition: any of them
+severity: 6
+
+---
+
+name: masquerade.kthread
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1036.004 ]
+    authors: [ qjerome ]
+    comments:
+        - tries to catch binaries masquerading kernel threads
+match-on:
+    events:
+        # prctl may be used to change task name
+        kunai: [ execve, execve_script, prctl ]
+matches:
+    # 0x200000 is the flag for KTHREAD
+    $task_is_kthread: .info.task.flags &= '0x200000'
+    # common kthread names 
+    $kthread_names: .info.task.name ~= '{{kthread-names}}'
+condition: not $task_is_kthread and $kthread_names
+severity: 9
+
+---
+
+name: network.sniffing
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1040 ]
+    authors: [ qjerome ]
+    comments:
+        - catch network sniffing
+match-on:
+    events:
+        kunai: [ bpf_socket_filter ]
+matches:
+    $d1: .data.socket.domain == 'AF_NETLINK'
+    $e1: .data.exe.path == '/usr/bin/wpa_supplicant'
+    $e2: .data.exe.path == '/usr/bin/NetworkManager'
+condition: none of $d and none of $e
+severity: 9
+
+---
+
+name: run.memfd
+meta:
+    tags: [ 'os:linux' ]
+    authors: [ qjerome ]
+    attack: [ T1027.011 ]
+    comments:
+        - something is running in memfd
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $a: .data.ancestors ~= '\|memfd:'
+    $p: .data.exe.path ~= '^memfd:'
+condition: any of them
+severity: 9
+
+---
+
+name: run.tmpfs.write.exe.dir
+meta:
+    tags: [ 'os:linux' ]
+    authors: [ qjerome ]
+    attack:
+        - T1027.011
+        - T1070.010
+    comments:
+        - files are being written to standard directories used for storing executables by an executable originating from a suspicious location
+match-on:
+    events:
+        kunai: [ write, write_close ]
+matches:
+    $d0: rule(dep.exe.dir)
+    $d1: rule(dep.run.tmpfs)
+condition: $d0 and $d1
+severity: 9
+
+---
+
+name: webshell
+meta:
+    tags: [ 'os:linux' ]
+    authors: [ qjerome ]
+    attack: 
+        - T1190
+        - T1059
+    comments:
+        - attempts at detecting webshells by catching specific command line patterns
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $d0: rule(dep.webservers)
+    $cmd: .data.command_line ~= '(^|\s)(ls|cp|chmod|chown|mv|whoami|id|touch|cat|curl|wget|ping|ps|top|kill|/dev/tcp.*|sudo|su)($|\s)'
+condition: $d0 and $cmd
+severity: 10
+
