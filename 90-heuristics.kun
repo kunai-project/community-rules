@@ -69,6 +69,11 @@ meta:
 match-on:
     events:
         kunai: [ bpf_socket_filter ]
+matches:
+    $d1: .data.socket.domain == 'AF_NETLINK'
+    $e1: .data.exe.path == '/usr/bin/wpa_supplicant'
+    $e2: .data.exe.path == '/usr/bin/NetworkManager'
+condition: none of $d and none of $e
 severity: 9
 
 ---
