@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.kun": "yaml",
+        "*.gen": "yaml",
+        "*.ioc": "jsonl"
+    }
+}

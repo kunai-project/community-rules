@@ -1,0 +1,204 @@
+name: inline.crontab
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1053.003 ]
+    authors: [ qjerome ]
+    comments:
+        - crontab config is piped
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ execve ]
+matches:
+    $c: .data.command_line ~= '\|\s*crontab\s+-'
+condition: $c
+severity: 8
+
+---
+
+name: stop.auditd
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1489 ]
+    authors: [ qjerome ]
+    comments:
+        - an attempt is made to stop auditd
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $c: .data.command_line ~= 'systemctl\s+stop\s+auditd'
+condition: all of them
+severity: 8
+
+---
+
+name: stop.apparmor
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1489 ]
+    authors: [ qjerome ]
+    comments:
+        - an attempt is made to stop apparmor
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $c: .data.command_line ~= 'systemctl\s+stop\s+apparmor'
+condition: all of them
+severity: 8
+
+---
+
+name: disable.audit
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1489 ]
+    authors: [ qjerome ]
+    comments:
+        - an attempt is made to disable auditd
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $c0: .data.command_line ~= 'systemctl\s+disable\s+auditd'
+    $c1: .data.command_line ~= 'auditctl.*?-e0'
+condition: any of them
+severity: 8
+
+---
+
+name: disable.apparmor
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1489 ]
+    authors: [ qjerome ]
+    comments:
+        - an attempt is made to disable apparmor
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $c0: .data.command_line ~= 'systemctl\s+disable\s+apparmor'
+    $c1: .data.command_line ~= 'systemd-sysv-install disable apparmor'
+condition: any of them
+severity: 8
+
+---
+
+name: so.tmpfs
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1574 ]
+    authors: [ qjerome ]
+    comments:
+        - shared object in tmpfs loaded
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on:
+    events:
+        kunai: [ mmap_exec ]
+matches:
+    $so: .data.mapped.path ~= '^{{tmpfs-dir}}'
+condition: any of them
+severity: 6
+
+---
+
+name: dropper.oneliner
+meta:
+    tags: [ 'os:linux' ]
+    attack: 
+      - T1059.004
+      - T1222.002
+      - T1070.004
+    authors: [ qjerome ]
+    comments:
+        - one liner dropper command line
+        - BPFDoor sample fa0defdabd9fd43fe2ef1ec33574ea1af1290bd3d763fdb2bed443f2bd996d73
+match-on:
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    $c: .data.command_line ~= 'cp.*?&&.*?chmod.*?&&.*?&&.*rm\s'
+condition: any of them
+severity: 8
+
+---
+
+name: file.timestomp
+meta:
+    tags: [ 'os:linux' ]
+    attack: [ T1070.006 ]
+    authors: [ qjerome ]
+    comments:
+        - file timestomping attempt via touch command
+        - seen in prctl malware https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+match-on: 
+    events:
+        kunai: [ execve, execve_script ]
+matches:
+    # copy metadata from other files via touch -r
+    $t: .data.command_line ~= 'touch\s+-\w*r'
+condition: any of them
+severity: 6
+
+---
+
+name: kill.systemd
+meta:
+    tags: [ 'os:linux' ]
+    authors: [ qjerome ]
+    attack: [ T1489 ]
+    comments:
+        - detect kill attempt on systemd
+        - 713b699c04f21000fca981e698e1046d4595f423bd5741d712fd7e0bc358c771
+match-on:
+    events:
+        kunai: [ kill ]
+matches:
+    $sd: .data.exe.path ~= '{{systemd-dir}}/systemd'
+    $p: .data.target.exe.path ~= '^/usr/lib/systemd/'
+condition: not $sd and $p 
+severity: 9
+
+--- 
+
+name: kill.critical.service
+meta:
+    tags: [ 'os:linux' ]
+    authors: [ qjerome ]
+    attack: [ T1489 ]
+    comments:
+        - detect kill attempt on critical services
+        - 713b699c04f21000fca981e698e1046d4595f423bd5741d712fd7e0bc358c771
+match-on:
+    events:
+        kunai: [ kill ]
+matches:
+    $sd: .data.exe.path ~= '{{systemd-dir}}/systemd'
+    $s1: .data.target.exe.path == '/usr/sbin/sshd'
+    $s2: .data.target.exe.path == '/usr/lib/openssh/sftp-server'
+condition: not $sd and any of $s
+severity: 9
+
+---
+
+name: self.deletion
+meta:
+    tags: [ 'os:linux' ]
+    authors: [ qjerome ]
+    attack: [ T1070 ]
+    comments:
+        - detects a self deleting executable
+        - 713b699c04f21000fca981e698e1046d4595f423bd5741d712fd7e0bc358c771
+match-on:
+    events:
+        kunai: [ file_unlink ]
+matches:
+    $p: .data.path == @.data.exe.path
+condition: $p 
+severity: 9
