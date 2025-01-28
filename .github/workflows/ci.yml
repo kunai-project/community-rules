@@ -16,7 +16,7 @@ jobs:
     - name: Define Variable
       run: |
         set -euxo pipefail
-        KUNAI_VERSION=$(git ls-remote --tags https://github.com/kunai-project/kunai.git | grep -P 'refs/tags/v\d+\.\d+\.\d+$' | awk '{print$NF}' | awk -F'/' '{print$NF}' | grep ${{ github.head_ref }} | sort -V | tail -1)
+        KUNAI_VERSION=$(git ls-remote --tags https://github.com/kunai-project/kunai.git | grep -P 'refs/tags/v\d+\.\d+\.\d+$' | awk '{print$NF}' | awk -F'/' '{print$NF}' | grep ${{ github.event.pull_request.base.ref }} | sort -V | tail -1)
         echo "kunai-version=$KUNAI_VERSION" >> $GITHUB_ENV
 
     # we are checking out the good kunai version
