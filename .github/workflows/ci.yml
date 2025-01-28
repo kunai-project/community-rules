@@ -1,0 +1,29 @@
+name: Rule Testing CI/CD
+
+on: 
+  pull_request:
+    branches: [ "kunai-v*" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # we try to find the appropriate kunai version
+    - name: Define Variable
+      run: |
+        KUNAI_VERSION=$(git ls-remote --tags https://github.com/kunai-project/kunai.git | grep -P 'refs/tags/v\d+\.\d+\.\d+$' | awk '{print$NF}' | awk -F'/' '{print$NF}' | grep ${{ github.head_ref }} | sort -V | tail -1)
+        echo "kunai-version=$KUNAI_VERSION" >> $GITHUB_ENV
+
+    # we are checking out the good kunai version
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        repository: kunai-project/kunai
+        ref: ${{ kunai-version }}
+        path: kunai
+        
+        
