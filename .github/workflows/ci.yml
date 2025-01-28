@@ -12,20 +12,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # we try to find the appropriate kunai version
+    # we try to find the appropriate kunai version we need to
+    # clone for testing those rules
     - name: Define Variable
       run: |
         set -euxo pipefail
         TARGET_VERSION=$(echo ${{ github.event.pull_request.base.ref }} | sed 's/kunai-//')
         KUNAI_VERSION=$(git ls-remote --tags https://github.com/kunai-project/kunai.git | grep -P 'refs/tags/v\d+\.\d+\.\d+$' | awk '{print$NF}' | awk -F'/' '{print$NF}' | grep $TARGET_VERSION | sort -V | tail -1)
         echo "kunai-version=$KUNAI_VERSION" >> $GITHUB_ENV
+    
+    - name: Cache
+      id: cache-kunai
+      uses: actions/cache@v4.0.2
+      with:
+        # A list of files, directories, and wildcard patterns to cache and restore
+        path: |
+          ~/.cargo
+          ~/.rustup
+          ./kunai/
+        # An explicit key for restoring and saving the cache
+        key: cache-linux-${{ env.kunai-version }}
 
     # we are checking out the good kunai version
     - name: Checkout
+      # run the stuff only if we failed at retrieve from cache
+      if: steps.cache-kunai.outputs.cache-hit != 'true'
       uses: actions/checkout@v3
       with:
         repository: kunai-project/kunai
         ref: ${{ env.kunai-version }}
         path: kunai
+    
+    # we install tools to compile kunai
+    - name: Install system tools
+      # no need to run if already compiled
+      if: steps.cache-kunai.outputs.cache-hit != 'true'
+      run: |
+        sudo apt update
+        sudo apt install -y qemu-system-x86 clang lld libbpf-dev
+    
+    # we install bpf-linker if needed
+    - name: Install bpf-linker
+      if: steps.cache-kunai.outputs.cache-hit != 'true'
+      run: cargo install bpf-linker
+
+    # we build kunai
+    - name: Build (eBPF and userland)
+      working-directory: kunai
+      run: cargo xtask build --release
         
         
