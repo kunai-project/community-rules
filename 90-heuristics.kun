@@ -15,7 +15,8 @@ match-on:
         kunai: [ mmap_exec ]
 matches:
     $e: .data.mapped.error is some
-condition: $e
+    $msg: .data.mapped.error == 'file not found'
+condition: $e and $msg
 severity: 8
 
 --- 
@@ -33,7 +34,9 @@ match-on:
 matches:
     $e: .data.exe.error is some
     $e2: .data.interpreter.error is some
-condition: any of them
+    $msg: .data.exe.error == 'file not found'
+    $msg2: .data.interpreter.error == 'file not found'
+condition: any of $e and any of $msg
 severity: 6
 
 ---
