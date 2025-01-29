@@ -1,0 +1,61 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin",
+    "parent_exe": "/tmp/sample.bin",
+    "command_line": "sh -c \"/bin/rm -f /dev/shm/kdmtmpflush;/bin/cp /tmp/sample.bin /dev/shm/kdmtmpflush && /bin/chmod 755 /dev/shm/kdmtmpflush && /dev/shm/kdmtmpflush --init && /bin/rm -f /dev/shm/kdmtmpflush\"",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "0320f20a-22ed-75b2-1cad-c54182092af5",
+      "batch": 362
+    },
+    "task": {
+      "name": "sh",
+      "pid": 2871,
+      "tgid": 2871,
+      "guuid": "06b02e47-1c00-0000-c7a9-f311370b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sample.bin",
+      "pid": 2870,
+      "tgid": 2870,
+      "guuid": "b9e87745-1c00-0000-c7a9-f311360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:13.664474989Z"
+  }
+}

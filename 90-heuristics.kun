@@ -15,7 +15,8 @@ match-on:
         kunai: [ mmap_exec ]
 matches:
     $e: .data.mapped.error is some
-condition: $e
+    $msg: .data.mapped.error == 'file not found'
+condition: $e and $msg
 severity: 8
 
 --- 
@@ -31,9 +32,18 @@ match-on:
     events:
         kunai: [ execve, execve_script ]
 matches:
+    # for exe
     $e: .data.exe.error is some
+    $msg: .data.exe.error == 'file not found'
+    $exe_wl: .data.exe.path == 'runc'
+    # for interpreter
     $e2: .data.interpreter.error is some
-condition: any of them
+    $msg2: .data.interpreter.error == 'file not found'
+    $int_wl: .data.interpreter.path == ''
+    # specific cloud-init case
+    $cloud_init1: .data.exe.path ~= '^/tmp/cloud-init.config'
+    $cloud_init2: .data.parent_exe == '/usr/sbin/dpkg-preconfigure'
+condition: not (all of $cloud_init) and ((none of $exe_wl and $e and $msg) or ($e2 and $msg2 and none of $int_wl))
 severity: 6
 
 ---

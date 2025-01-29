@@ -1,0 +1,549 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod 4755 /bin/wizlmsh",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "e852dbd4-a32a-d9ca-07d9-b0058f9b4e47",
+      "batch": 696
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2913,
+      "tgid": 2913,
+      "guuid": "3bbeb74a-1d00-0000-20a4-0e1d610b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2911,
+      "tgid": 2911,
+      "guuid": "289ea04a-1d00-0000-20a4-0e1d5f0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.341498235Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod +x /lib/libpprocps.so",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "9406bcfe-efce-e5e2-6e56-07add713f20f",
+      "batch": 696
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2924,
+      "tgid": 2924,
+      "guuid": "37e9f84b-1d00-0000-20a4-0e1d6c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2921,
+      "tgid": 2921,
+      "guuid": "c293684b-1d00-0000-20a4-0e1d690b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.344298936Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod +x /lib/libfsnldev.so",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "c3cfd955-dd6d-d25a-ef8a-eea956997142",
+      "batch": 696
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2932,
+      "tgid": 2932,
+      "guuid": "00f4e54f-1d00-0000-20a4-0e1d740b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2927,
+      "tgid": 2927,
+      "guuid": "ad5f0d4f-1d00-0000-20a4-0e1d6f0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.346458534Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod 755 /bin/.local/bin/ldd /bin/.local/bin/strace /bin/.local/bin/top",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "c2d27461-a7eb-931e-8e9c-436656203988",
+      "batch": 697
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2944,
+      "tgid": 2944,
+      "guuid": "62df2e53-1d00-0000-20a4-0e1d800b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2943,
+      "tgid": 2943,
+      "guuid": "44431c53-1d00-0000-20a4-0e1d7f0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.349034523Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod g+s /lib/libgcwrap.so",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "63f16711-cd65-4750-35f8-920cdcd0da70",
+      "batch": 697
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2955,
+      "tgid": 2955,
+      "guuid": "a0597554-1d00-0000-20a4-0e1d8b0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2954,
+      "tgid": 2954,
+      "guuid": "fac46254-1d00-0000-20a4-0e1d8a0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.350788885Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/tmp/sample.bin|/tmp/sample.bin|/usr/bin/dash|/usr/bin/bsd-port/knerl|/usr/bin/bsd-port/knerl|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod 0755 /bin/ps",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "fa96c029-f786-bbb5-bad8-ad255c6ec565",
+      "batch": 954
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2926,
+      "tgid": 2926,
+      "guuid": "53dfb9ec-1d00-0000-6f70-70206e0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2925,
+      "tgid": 2925,
+      "guuid": "81e3a5ec-1d00-0000-6f70-70206d0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:20.711103522Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/tmp/sample.bin|/tmp/sample.bin|/usr/bin/dash|/usr/bin/bsd-port/knerl|/usr/bin/bsd-port/knerl|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod 0755 /usr/bin/ps",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "04bb0b3b-23e6-7cb9-8b9b-4dbba348498d",
+      "batch": 956
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2932,
+      "tgid": 2932,
+      "guuid": "33918aed-1d00-0000-6f70-7020740b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2931,
+      "tgid": 2931,
+      "guuid": "6fc077ed-1d00-0000-6f70-7020730b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:20.713724931Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/tmp/sample.bin|/tmp/sample.bin|/usr/bin/dash|/usr/bin/bsd-port/agent|/usr/bin/bsd-port/agent|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod 0755 /bin/ps",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "bafa8823-ba78-5fb1-7e18-b5957630c988",
+      "batch": 947
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2926,
+      "tgid": 2926,
+      "guuid": "0af5dbf2-1d00-0000-37fb-15826e0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2925,
+      "tgid": 2925,
+      "guuid": "cdabc3f2-1d00-0000-37fb-15826d0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:20.770612445Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/tmp/sample.bin|/tmp/sample.bin|/usr/bin/dash|/usr/bin/bsd-port/agent|/usr/bin/bsd-port/agent|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "chmod 0755 /usr/bin/ps",
+    "exe": {
+      "path": "/usr/bin/chmod",
+      "md5": "6142a2ff5b69d32166187cdee41e7ea0",
+      "sha1": "17268a4f4a174d206885ac8c1a0803c219adab73",
+      "sha256": "623fdf73612f898ec829e529ffd143520fb617a75bca84e242030f48d2144645",
+      "sha512": "de3aee4b0c5fe3ffcff623360bcda500171b71667d733c098e3fd6efb37e9cc404454a0e99712ba737f702a1ab5266f223f418078de5dd70ddb2b24afff68d31",
+      "size": 64496,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "1934c684-5322-726d-3f39-c80b9fb37b79",
+      "batch": 947
+    },
+    "task": {
+      "name": "chmod",
+      "pid": 2932,
+      "tgid": 2932,
+      "guuid": "9edfbef3-1d00-0000-37fb-1582740b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2931,
+      "tgid": 2931,
+      "guuid": "8d72a9f3-1d00-0000-37fb-1582730b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:20.773089302Z"
+  }
+}

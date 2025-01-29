@@ -1,0 +1,183 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh|/home/user/poc-techniques/poc-memfd",
+    "parent_exe": "/home/user/poc-techniques/poc-memfd",
+    "command_line": "bash -c \"(ls -hail)&\"",
+    "exe": {
+      "path": "memfd:memfd_ls",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "64e9ec7c-83c6-b3a3-ea90-e052001b738b",
+      "batch": 2097
+    },
+    "task": {
+      "name": "3",
+      "pid": 2088877,
+      "tgid": 2088877,
+      "guuid": "360500ba-59b5-0300-65b3-020eaddf1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "poc-memfd",
+      "pid": 2088876,
+      "tgid": 2088876,
+      "guuid": "485de7b9-59b5-0300-65b3-020eacdf1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:28:45.643694905Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh|/home/user/poc-techniques/poc-memfd|memfd:memfd_ls",
+    "parent_exe": "memfd:memfd_ls",
+    "command_line": "ls -hail",
+    "exe": {
+      "path": "/usr/bin/ls",
+      "md5": "a1a5ff05a4f683b39a761263d91df09e",
+      "sha1": "710fa3df18177c80e749d11d58d0efdf32384986",
+      "sha256": "02822b4a4a0636d416a98a076230dc6e69754270b9b1ffee4ec59210ba373455",
+      "sha512": "c610808800e46b81c6a53cf93472ae2026a4ecd33171033631309eb7e913bfcd4900e4d1165a1ce116a3e2fc1960918b66f1b3865c942f59770d8b28172af509",
+      "size": 137920,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "ee973a6c-2755-a033-7acb-2c53b1a4ff43",
+      "batch": 2097
+    },
+    "task": {
+      "name": "ls",
+      "pid": 2088878,
+      "tgid": 2088878,
+      "guuid": "96ce0eba-59b5-0300-65b3-020eaedf1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "3",
+      "pid": 2088877,
+      "tgid": 2088877,
+      "guuid": "360500ba-59b5-0300-65b3-020eaddf1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:28:45.645036873Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh|/home/user/poc-techniques/poc-memfd",
+    "parent_exe": "/home/user/poc-techniques/poc-memfd",
+    "command_line": "bash -c \"(ls -hail)&\"",
+    "exe": {
+      "path": "memfd:memfd_ls",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "39924640-f199-bbb5-8d4a-71281898911e",
+      "batch": 2174
+    },
+    "task": {
+      "name": "3",
+      "pid": 2088915,
+      "tgid": 2088915,
+      "guuid": "b3e7be0b-5ab5-0300-65b3-020ed3df1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "poc-memfd",
+      "pid": 2088914,
+      "tgid": 2088914,
+      "guuid": "647fa60b-5ab5-0300-65b3-020ed2df1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:28:46.468089156Z"
+  }
+}

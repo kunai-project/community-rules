@@ -1,0 +1,189 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "command_line": "ls -la /tmp",
+    "exe": {
+      "path": "/usr/bin/ls"
+    },
+    "mapped": {
+      "path": "/tmp/libgcwrap.so",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 41,
+      "name": "mmap_exec",
+      "uuid": "21f50392-23f8-85a6-08cc-4984ad2187ca",
+      "batch": 697
+    },
+    "task": {
+      "name": "ls",
+      "pid": 2948,
+      "tgid": 2948,
+      "guuid": "5a60a853-1d00-0000-20a4-0e1d840b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2946,
+      "tgid": 2946,
+      "guuid": "af677653-1d00-0000-20a4-0e1d820b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.349517754Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "command_line": "sh -c \"echo BAQLznamq9t08rtq7O5LDzm0K5nqROAs|cat > /tmp/lgctr2 2>&1\"",
+    "exe": {
+      "path": "/usr/bin/dash"
+    },
+    "mapped": {
+      "path": "/tmp/libgcwrap.so",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 41,
+      "name": "mmap_exec",
+      "uuid": "15b0f25a-cd7a-dc40-0fe4-65d706fb3bdb",
+      "batch": 697
+    },
+    "task": {
+      "name": "sh",
+      "pid": 2951,
+      "tgid": 2951,
+      "guuid": "54391654-1d00-0000-20a4-0e1d870b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2950,
+      "tgid": 2950,
+      "guuid": "1e1e0254-1d00-0000-20a4-0e1d860b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.350163569Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash|/usr/bin/dash",
+    "command_line": "cat",
+    "exe": {
+      "path": "/usr/bin/cat"
+    },
+    "mapped": {
+      "path": "/tmp/libgcwrap.so",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 41,
+      "name": "mmap_exec",
+      "uuid": "f68b018c-45e4-010e-2605-0dd767cd2a47",
+      "batch": 697
+    },
+    "task": {
+      "name": "cat",
+      "pid": 2953,
+      "tgid": 2953,
+      "guuid": "8f253354-1d00-0000-20a4-0e1d890b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2951,
+      "tgid": 2951,
+      "guuid": "54391654-1d00-0000-20a4-0e1d870b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:18.350382250Z"
+  }
+}

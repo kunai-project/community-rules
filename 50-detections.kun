@@ -160,9 +160,10 @@ match-on:
     events:
         kunai: [ kill ]
 matches:
-    $sd: .data.exe.path ~= '{{systemd-dir}}/systemd'
+    
+    $wl1: .data.exe.path ~= '{{systemd-dir}}/systemd'
     $p: .data.target.exe.path ~= '^/usr/lib/systemd/'
-condition: not $sd and $p 
+condition: none of $wl and $p 
 severity: 9
 
 --- 
@@ -179,10 +180,11 @@ match-on:
     events:
         kunai: [ kill ]
 matches:
-    $sd: .data.exe.path ~= '{{systemd-dir}}/systemd'
+    $wl0: .data.exe.path ~= '{{systemd-dir}}/systemd'
+    $wl1: .data.exe.path == '/usr/sbin/sshd'
     $s1: .data.target.exe.path == '/usr/sbin/sshd'
     $s2: .data.target.exe.path == '/usr/lib/openssh/sftp-server'
-condition: not $sd and any of $s
+condition: none of $wl and any of $s
 severity: 9
 
 ---

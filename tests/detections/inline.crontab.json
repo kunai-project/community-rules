@@ -1,0 +1,244 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf",
+    "parent_exe": "/tmp/.perf.c/ipv6_addrconf",
+    "command_line": "/bin/sh -c \"(crontab -l|grep -v -e perfcc -e /tmp/.perf;echo '11 * * * * /root/.config/cron/perfcc')|crontab -\"",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "1b718fc8-9be1-7f85-b412-8782504c5c45",
+      "batch": 1597
+    },
+    "task": {
+      "name": "sh",
+      "pid": 3108,
+      "tgid": 3108,
+      "guuid": "c2f842b5-1f00-0000-20a4-0e1d240c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "ipv6_addrconf",
+      "pid": 2902,
+      "tgid": 2892,
+      "guuid": "5c956153-1c00-0000-20a4-0e1d4c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400040",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:28.388453465Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf",
+    "parent_exe": "/tmp/.perf.c/ipv6_addrconf",
+    "command_line": "/bin/sh -c \"(crontab -l|grep -v -e perfcc -e /tmp/.perf;echo '11 * * * * /root/.config/cron/perfcc')|crontab -\"",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "6418e8e6-d9cd-a585-1a9f-644d28a3e11b",
+      "batch": 2434
+    },
+    "task": {
+      "name": "sh",
+      "pid": 3152,
+      "tgid": 3152,
+      "guuid": "65aaac0c-2200-0000-20a4-0e1d500c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "ipv6_addrconf",
+      "pid": 2896,
+      "tgid": 2892,
+      "guuid": "5c956153-1c00-0000-20a4-0e1d4c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:38.406712090Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf",
+    "parent_exe": "/tmp/.perf.c/ipv6_addrconf",
+    "command_line": "/bin/sh -c \"(crontab -l|grep -v -e perfcc -e /tmp/.perf;echo '11 * * * * /root/.config/cron/perfcc')|crontab -\"",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "bd1f4110-abf5-0aba-651f-84d478622021",
+      "batch": 3285
+    },
+    "task": {
+      "name": "sh",
+      "pid": 3200,
+      "tgid": 3200,
+      "guuid": "4010f465-2400-0000-20a4-0e1d800c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "ipv6_addrconf",
+      "pid": 2910,
+      "tgid": 2892,
+      "guuid": "5c956153-1c00-0000-20a4-0e1d4c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:48.440641040Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf",
+    "parent_exe": "/tmp/.perf.c/ipv6_addrconf",
+    "command_line": "/bin/sh -c \"(crontab -l|grep -v -e perfcc -e /tmp/.perf;echo '11 * * * * /root/.config/cron/perfcc')|crontab -\"",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "b3b2587c-dbd8-4cd7-35c9-0216eb536fc1",
+      "batch": 4132
+    },
+    "task": {
+      "name": "sh",
+      "pid": 3242,
+      "tgid": 3242,
+      "guuid": "99004ebd-2600-0000-20a4-0e1daa0c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "ipv6_addrconf",
+      "pid": 2910,
+      "tgid": 2892,
+      "guuid": "5c956153-1c00-0000-20a4-0e1d4c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:58.482101095Z"
+  }
+}

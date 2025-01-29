@@ -1,0 +1,183 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "parent_exe": "/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "ffbb2672-2509-8b3d-089c-02571d0cfcb2",
+      "batch": 358
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2870,
+      "tgid": 2870,
+      "guuid": "2887e345-1c00-0000-20a4-0e1d360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "cbb6a8ef-1900-0000-20a4-0e1d340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:13.837226664Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "94cd0898-d24e-bebd-4548-57a21b7910dc",
+      "batch": 359
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2880,
+      "tgid": 2880,
+      "guuid": "2a26664c-1c00-0000-20a4-0e1d400b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2879,
+      "tgid": 2879,
+      "guuid": "05d5444c-1c00-0000-20a4-0e1d3f0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:13.837884313Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "/dev/shm/kdmtmpflush --init",
+    "exe": {
+      "path": "/dev/shm/kdmtmpflush",
+      "md5": "",
+      "sha1": "",
+      "sha256": "",
+      "sha512": "",
+      "size": 0,
+      "error": "file not found"
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "4d4a2855-ed68-df7d-ff63-557719344553",
+      "batch": 363
+    },
+    "task": {
+      "name": "kdmtmpflush",
+      "pid": 2875,
+      "tgid": 2875,
+      "guuid": "06a4ac47-1c00-0000-c7a9-f3113b0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2871,
+      "tgid": 2871,
+      "guuid": "06b02e47-1c00-0000-c7a9-f311370b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:13.668253446Z"
+  }
+}
