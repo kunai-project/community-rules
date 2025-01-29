@@ -31,7 +31,7 @@ jobs:
           ~/.rustup
           ./kunai/
         # An explicit key for restoring and saving the cache
-        key: cache-linux-${{ env.kunai-version }}
+        key: cache-kunai-${{ env.kunai-version }}
 
     # we are checking out the good kunai version
     - name: Checkout Kunai
