@@ -59,7 +59,7 @@ jobs:
     - name: Build Kunai
       if: steps.cache-kunai.outputs.cache-hit != 'true'
       working-directory: kunai
-      run: cargo xbuild
+      run: cargo xbuild --release
 
     - name: Checkout Rules
       uses: actions/checkout@v3
