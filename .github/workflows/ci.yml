@@ -64,6 +64,6 @@ jobs:
     # we are running tests on rules
     - name: Running Rule Tests
       working-directory: kunai
-      run: cargo xtask run -- test -r ./rules -t ./rules/tests/detections -b ./rules/tests/baselines
+      run: cargo xtask run --release -- test -r ./rules -t ./rules/tests/detections -b ./rules/tests/baselines
         
         
