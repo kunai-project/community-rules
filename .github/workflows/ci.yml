@@ -33,7 +33,7 @@ jobs:
         # An explicit key for restoring and saving the cache
         key: cache-kunai-${{ env.kunai-version }}
 
-    # we are checking out the good kunai version
+    # we are checking out the good kunai version to test those rules
     - name: Checkout Kunai
       # run the stuff only if we failed at retrieve from cache
       if: steps.cache-kunai.outputs.cache-hit != 'true'
@@ -64,6 +64,6 @@ jobs:
     # we are running tests on rules
     - name: Running Rule Tests
       working-directory: kunai
-      run: cargo xtask run --release -- test -r ./rules -t ./rules/tests/detections -b ./rules/tests/baselines
+      run: cargo xtask run --release -- -v test -r ./rules -t ./rules/tests/detections -b ./rules/tests/baselines
         
         
