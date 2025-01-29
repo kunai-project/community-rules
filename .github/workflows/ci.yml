@@ -34,7 +34,7 @@ jobs:
         key: cache-linux-${{ env.kunai-version }}
 
     # we are checking out the good kunai version
-    - name: Checkout
+    - name: Checkout Kunai
       # run the stuff only if we failed at retrieve from cache
       if: steps.cache-kunai.outputs.cache-hit != 'true'
       uses: actions/checkout@v3
@@ -56,9 +56,14 @@ jobs:
       if: steps.cache-kunai.outputs.cache-hit != 'true'
       run: cargo install bpf-linker
 
-    # we build kunai
-    - name: Build (eBPF and userland)
+    - name: Checkout Rules
+      uses: actions/checkout@v3
+      with:
+        path: kunai/rules
+
+    # we are running tests on rules
+    - name: Running Rule Tests
       working-directory: kunai
-      run: cargo xtask build --release
+      run: cargo xtask run -- test -r ./rules -t ./rules/tests/detections -b ./rules/tests/baselines
         
         

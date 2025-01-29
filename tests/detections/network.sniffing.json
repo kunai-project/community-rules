@@ -1,0 +1,210 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd",
+    "command_line": "/lib/systemd/systemd-networkd",
+    "exe": {
+      "path": "/usr/lib/systemd/systemd-networkd"
+    },
+    "socket": {
+      "domain": "AF_PACKET",
+      "type": "SOCK_RAW",
+      "proto": "IP"
+    },
+    "filter": {
+      "md5": "4b257c39cb2ab30c9277692b41cc6dc8",
+      "sha1": "d087ac85be359a163d527ec7ac8786581177ae19",
+      "sha256": "b618c9c308024d31585d4ac8ad6441eff229d3f1e58064bb3a84ed0ef1765138",
+      "sha512": "1d3840a819d480ae95b1e63902ad5a97dcfd92142280aa261c3a65ab42a4066b6204854f889024ee7ca63e4212799437db12985aa567a0ca5c17f4c98d2eef5b",
+      "len": 12,
+      "size": 96
+    },
+    "attached": true
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": {
+        "name": "kunai-sandbox",
+        "type": null
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 22,
+      "name": "bpf_socket_filter",
+      "uuid": "d760f923-e37e-2b2a-0aca-42c22897b8c2",
+      "batch": 533
+    },
+    "task": {
+      "name": "systemd-network",
+      "pid": 2882,
+      "tgid": 2882,
+      "guuid": "ad15dacf-1c00-0000-2b3d-b7a2420b0000",
+      "uid": 998,
+      "user": "?",
+      "gid": 998,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026532207
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "systemd",
+      "pid": 1,
+      "tgid": 1,
+      "guuid": "62601609-0000-0000-2b3d-b7a201000000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:16.994073935Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd",
+    "command_line": "/lib/systemd/systemd-networkd",
+    "exe": {
+      "path": "/usr/lib/systemd/systemd-networkd"
+    },
+    "socket": {
+      "domain": "AF_PACKET",
+      "type": "SOCK_DGRAM",
+      "proto": "IP"
+    },
+    "filter": {
+      "md5": "dd35f10017c19f31ebd19a474d0029e5",
+      "sha1": "cd0fbc8a73349f9708b0acab84736312bea133b6",
+      "sha256": "f7980807e31c09679955f491067766f197865ccfaef4cef958eb35147569d563",
+      "sha512": "db886a721c7d19276161c0d95001e9f87f468506b17cd631dee4430721e54a743bf47b742354d7686e2e66c09c1b3eed240aa3c1db51bc65eaf5f2a6383e98a9",
+      "len": 42,
+      "size": 336
+    },
+    "attached": true
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": {
+        "name": "kunai-sandbox",
+        "type": null
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 22,
+      "name": "bpf_socket_filter",
+      "uuid": "0bc68094-fc1f-a6e4-de1d-8f07ffb602c9",
+      "batch": 533
+    },
+    "task": {
+      "name": "systemd-network",
+      "pid": 2882,
+      "tgid": 2882,
+      "guuid": "ad15dacf-1c00-0000-2b3d-b7a2420b0000",
+      "uid": 998,
+      "user": "?",
+      "gid": 998,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026532207
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "systemd",
+      "pid": 1,
+      "tgid": 1,
+      "guuid": "62601609-0000-0000-2b3d-b7a201000000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:17.000679718Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/dev/shm/kdmtmpflush",
+    "command_line": "\"dbus-daemon --system\"",
+    "exe": {
+      "path": "/dev/shm/kdmtmpflush"
+    },
+    "socket": {
+      "domain": "AF_PACKET",
+      "type": "SOCK_RAW",
+      "proto": "IP"
+    },
+    "filter": {
+      "md5": "19c9f9f52a7d7bf1f9c26dc57034873b",
+      "sha1": "c97c5ad700f7426432dbe4d6478f362714e835f0",
+      "sha256": "1a23f76646d1741946afd2d6d3ce3d0deae14198b544b09322a540c345953988",
+      "sha512": "af9fce79e05316999ae3ef82ea7a04ce299c611cb46e27154e455b9f9bea42631a5293dd42cb0d332d5e10b8ed924930321cb3433b7989e6fe9042d97338d477",
+      "len": 30,
+      "size": 240
+    },
+    "attached": true
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 22,
+      "name": "bpf_socket_filter",
+      "uuid": "8daf09c0-97d2-a864-e272-ae47751a7f57",
+      "batch": 363
+    },
+    "task": {
+      "name": "dbus-daemon --s",
+      "pid": 2876,
+      "tgid": 2876,
+      "guuid": "062fbf47-1c00-0000-c7a9-f3113c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "kdmtmpflush",
+      "pid": 2875,
+      "tgid": 2875,
+      "guuid": "06a4ac47-1c00-0000-c7a9-f3113b0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:13.668902868Z"
+  }
+}

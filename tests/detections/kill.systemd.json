@@ -1,0 +1,380 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "signal": "SIGKILL",
+    "target": {
+      "command_line": "/lib/systemd/systemd-resolved",
+      "exe": {
+        "path": "/usr/lib/systemd/systemd-resolved"
+      },
+      "task": {
+        "name": "systemd-resolve",
+        "pid": 298,
+        "tgid": 298,
+        "guuid": "e8a33428-0100-0000-2b3d-b7a22a010000",
+        "uid": 996,
+        "user": "?",
+        "gid": 996,
+        "group": "?",
+        "namespaces": {
+          "mnt": 4026532205
+        },
+        "flags": "0x400100",
+        "zombie": false
+      }
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 8,
+      "name": "kill",
+      "uuid": "ec857802-8e49-6ede-8b26-0a1d0f8a6f27",
+      "batch": 524
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2874,
+      "tgid": 2870,
+      "guuid": "297d9e5d-1c00-0000-2b3d-b7a2360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "f1fd3107-1a00-0000-2b3d-b7a2340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:15.791082855Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "signal": "SIGKILL",
+    "target": {
+      "command_line": "/lib/systemd/systemd-timesyncd",
+      "exe": {
+        "path": "/usr/lib/systemd/systemd-timesyncd"
+      },
+      "task": {
+        "name": "systemd-timesyn",
+        "pid": 299,
+        "tgid": 299,
+        "guuid": "44e7ff2a-0100-0000-2b3d-b7a22b010000",
+        "uid": 997,
+        "user": "?",
+        "gid": 997,
+        "group": "?",
+        "namespaces": {
+          "mnt": 4026532206
+        },
+        "flags": "0x400100",
+        "zombie": false
+      }
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 8,
+      "name": "kill",
+      "uuid": "bb9107e1-b699-0aa6-c740-bce5ab31c73a",
+      "batch": 524
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2874,
+      "tgid": 2870,
+      "guuid": "297d9e5d-1c00-0000-2b3d-b7a2360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "f1fd3107-1a00-0000-2b3d-b7a2340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:15.791099623Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "signal": "SIGKILL",
+    "target": {
+      "command_line": "/lib/systemd/systemd-networkd",
+      "exe": {
+        "path": "/usr/lib/systemd/systemd-networkd"
+      },
+      "task": {
+        "name": "systemd-network",
+        "pid": 334,
+        "tgid": 334,
+        "guuid": "9f85c083-0100-0000-2b3d-b7a24e010000",
+        "uid": 998,
+        "user": "?",
+        "gid": 998,
+        "group": "?",
+        "namespaces": {
+          "mnt": 4026532208
+        },
+        "flags": "0x400100",
+        "zombie": false
+      }
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 8,
+      "name": "kill",
+      "uuid": "f3b785c7-b875-7d7d-65a5-18548cbea492",
+      "batch": 524
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2874,
+      "tgid": 2870,
+      "guuid": "297d9e5d-1c00-0000-2b3d-b7a2360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "f1fd3107-1a00-0000-2b3d-b7a2340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:15.791150816Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "signal": "SIGKILL",
+    "target": {
+      "command_line": "/lib/systemd/systemd --user",
+      "exe": {
+        "path": "/usr/lib/systemd/systemd"
+      },
+      "task": {
+        "name": "systemd",
+        "pid": 2771,
+        "tgid": 2771,
+        "guuid": "5edbdde3-1000-0000-2b3d-b7a2d30a0000",
+        "uid": 1000,
+        "user": "?",
+        "gid": 1001,
+        "group": "?",
+        "namespaces": {
+          "mnt": 4026531841
+        },
+        "flags": "0x400100",
+        "zombie": false
+      }
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 8,
+      "name": "kill",
+      "uuid": "698d835e-b2a9-4771-b9cb-1b28d3a65ac6",
+      "batch": 524
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2874,
+      "tgid": 2870,
+      "guuid": "297d9e5d-1c00-0000-2b3d-b7a2360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "f1fd3107-1a00-0000-2b3d-b7a2340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:15.791225383Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "signal": "SIGKILL",
+    "target": {
+      "command_line": "(sd-pam)",
+      "exe": {
+        "path": "/usr/lib/systemd/systemd"
+      },
+      "task": {
+        "name": "(sd-pam)",
+        "pid": 2772,
+        "tgid": 2772,
+        "guuid": "a64387e6-1000-0000-2b3d-b7a2d40a0000",
+        "uid": 1000,
+        "user": "?",
+        "gid": 1001,
+        "group": "?",
+        "namespaces": {
+          "mnt": 4026531841
+        },
+        "flags": "0x400140",
+        "zombie": false
+      }
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 8,
+      "name": "kill",
+      "uuid": "5965ab0c-1909-95c6-f235-5940ae08abb2",
+      "batch": 524
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2874,
+      "tgid": 2870,
+      "guuid": "297d9e5d-1c00-0000-2b3d-b7a2360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "f1fd3107-1a00-0000-2b3d-b7a2340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:15.791356934Z"
+  }
+}

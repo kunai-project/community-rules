@@ -1,0 +1,1023 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "parent_exe": "/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd",
+      "md5": "a1a5ff05a4f683b39a761263d91df09e",
+      "sha1": "710fa3df18177c80e749d11d58d0efdf32384986",
+      "sha256": "02822b4a4a0636d416a98a076230dc6e69754270b9b1ffee4ec59210ba373455",
+      "sha512": "c610808800e46b81c6a53cf93472ae2026a4ecd33171033631309eb7e913bfcd4900e4d1165a1ce116a3e2fc1960918b66f1b3865c942f59770d8b28172af509",
+      "size": 137920,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "824b9140-6503-5c15-ce01-28ed73fe7808",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.699755430Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x20",
+    "arg3": "0x0",
+    "arg4": "0x771822fcfbe8",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "9e306208-f5a2-563f-8bbb-fd27ac2922bc",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.701300925Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x30",
+    "arg3": "0x0",
+    "arg4": "0x771822eedd9e",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "d245be41-74a9-9ed2-451e-9e3e30e6ca85",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.701366951Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x28",
+    "arg3": "0x0",
+    "arg4": "0xffffffffffffff88",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "314917b5-db67-6746-360b-3660ed5bff6d",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.701393601Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x2c",
+    "arg3": "0x0",
+    "arg4": "0x771822eedd9e",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "139a2ecb-637e-e10a-d018-841a18110fec",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.701430120Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x2a",
+    "arg3": "0x0",
+    "arg4": "0xffffffffffffff88",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "3c886333-6427-b3f7-72d9-8e5f4f47a7bc",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.701452236Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/ksmd",
+    "exe": {
+      "path": "/tmp/ksmd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x29",
+    "arg3": "0x0",
+    "arg4": "0xffffffffffffff88",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "816b7461-8f51-9fee-a961-ccabdafc30bb",
+      "batch": 553
+    },
+    "task": {
+      "name": "ksmd",
+      "pid": 2083705,
+      "tgid": 2083705,
+      "guuid": "69c19d76-90b4-0300-ee40-669679cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:20.701492831Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "parent_exe": "/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd",
+      "md5": "a1a5ff05a4f683b39a761263d91df09e",
+      "sha1": "710fa3df18177c80e749d11d58d0efdf32384986",
+      "sha256": "02822b4a4a0636d416a98a076230dc6e69754270b9b1ffee4ec59210ba373455",
+      "sha512": "c610808800e46b81c6a53cf93472ae2026a4ecd33171033631309eb7e913bfcd4900e4d1165a1ce116a3e2fc1960918b66f1b3865c942f59770d8b28172af509",
+      "size": 137920,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "a65a5aec-dcaa-8075-d81e-c92e49d164ea",
+      "batch": 764
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.253784057Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x20",
+    "arg3": "0x0",
+    "arg4": "0x76796011bbe8",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "00ccc197-c830-9dab-ed47-c059d62540af",
+      "batch": 765
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.254582023Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x30",
+    "arg3": "0x0",
+    "arg4": "0x767960039d9e",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "880be33a-8d5a-788a-4d0b-c80ab869aa56",
+      "batch": 765
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.254715097Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x28",
+    "arg3": "0x0",
+    "arg4": "0xffffffffffffff88",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "ef7e9d99-64b7-6898-6209-7abe48e86976",
+      "batch": 765
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.254834040Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x2c",
+    "arg3": "0x0",
+    "arg4": "0x767960039d9e",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "1bedc0f8-0017-d2c6-622d-b50098a2d988",
+      "batch": 765
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.254949313Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x2a",
+    "arg3": "0x0",
+    "arg4": "0xffffffffffffff88",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "e645af5d-0a37-175d-9ef8-c1f2682107a6",
+      "batch": 765
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.255061932Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kauditd",
+    "exe": {
+      "path": "/tmp/kauditd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x29",
+    "arg3": "0x0",
+    "arg4": "0xffffffffffffff88",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "02e6900e-a9fd-8083-92b7-8b8751575715",
+      "batch": 765
+    },
+    "task": {
+      "name": "kauditd",
+      "pid": 2083753,
+      "tgid": 2083753,
+      "guuid": "a878310f-91b4-0300-ee40-6696a9cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:23.255174788Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "parent_exe": "/usr/bin/zsh",
+    "command_line": "/tmp/kthreadd",
+    "exe": {
+      "path": "/tmp/kthreadd",
+      "md5": "a1a5ff05a4f683b39a761263d91df09e",
+      "sha1": "710fa3df18177c80e749d11d58d0efdf32384986",
+      "sha256": "02822b4a4a0636d416a98a076230dc6e69754270b9b1ffee4ec59210ba373455",
+      "sha512": "c610808800e46b81c6a53cf93472ae2026a4ecd33171033631309eb7e913bfcd4900e4d1165a1ce116a3e2fc1960918b66f1b3865c942f59770d8b28172af509",
+      "size": 137920,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "4bf0ec9e-91d5-0922-8b04-721a76cf34cc",
+      "batch": 1701
+    },
+    "task": {
+      "name": "kthreadd",
+      "pid": 2083830,
+      "tgid": 2083830,
+      "guuid": "a50fcb88-93b4-0300-ee40-6696f6cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:33.931869054Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kthreadd",
+    "exe": {
+      "path": "/tmp/kthreadd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x20",
+    "arg3": "0x0",
+    "arg4": "0x7fbdba267be8",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "605b2c5e-f6b4-7c8e-1725-615f5e17afb2",
+      "batch": 1702
+    },
+    "task": {
+      "name": "kthreadd",
+      "pid": 2083830,
+      "tgid": 2083830,
+      "guuid": "a50fcb88-93b4-0300-ee40-6696f6cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:33.939366461Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/login|/usr/bin/zsh|/usr/bin/bash|/usr/bin/xinit|/usr/bin/i3|/usr/bin/bash|/usr/bin/urxvt|/usr/bin/zsh",
+    "command_line": "/tmp/kthreadd",
+    "exe": {
+      "path": "/tmp/kthreadd"
+    },
+    "option": "PR_CAPBSET_READ",
+    "arg2": "0x30",
+    "arg3": "0x0",
+    "arg4": "0x7fbdba185d9e",
+    "arg5": "0x0",
+    "success": true
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 7,
+      "name": "prctl",
+      "uuid": "710ff4f8-42a6-f2d3-802d-9365f660a166",
+      "batch": 1702
+    },
+    "task": {
+      "name": "kthreadd",
+      "pid": 2083830,
+      "tgid": 2083830,
+      "guuid": "a50fcb88-93b4-0300-ee40-6696f6cb1f00",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "zsh",
+      "pid": 1559390,
+      "tgid": 1559390,
+      "guuid": "6bc6745f-8585-0200-ee40-66965ecb1700",
+      "uid": 1000,
+      "user": "user",
+      "gid": 1000,
+      "group": "user",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T09:14:33.939511360Z"
+  }
+}

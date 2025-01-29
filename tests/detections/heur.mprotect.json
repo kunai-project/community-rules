@@ -1,0 +1,504 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "addr": "0x7fe8698e6000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "a6c69e26-d596-8557-9f44-195e140287d9",
+      "batch": 358
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2870,
+      "tgid": 2870,
+      "guuid": "2887e345-1c00-0000-20a4-0e1d360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "cbb6a8ef-1900-0000-20a4-0e1d340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:13.837255560Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "addr": "0x400000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "5e7b2c72-eed0-5d5e-96e8-e1bc864257da",
+      "batch": 359
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2870,
+      "tgid": 2870,
+      "guuid": "2887e345-1c00-0000-20a4-0e1d360b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sudo",
+      "pid": 2868,
+      "tgid": 2868,
+      "guuid": "cbb6a8ef-1900-0000-20a4-0e1d340b0000",
+      "uid": 1000,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:13.837267267Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "addr": "0x7fa18926e000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "26d2effe-5dc5-9771-025a-6c8933faa1b8",
+      "batch": 359
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2880,
+      "tgid": 2880,
+      "guuid": "2a26664c-1c00-0000-20a4-0e1d400b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2879,
+      "tgid": 2879,
+      "guuid": "05d5444c-1c00-0000-20a4-0e1d3f0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:13.837897362Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash",
+    "command_line": "/tmp/sample.bin",
+    "exe": {
+      "path": "/tmp/sample.bin"
+    },
+    "addr": "0x400000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "f9c5ff97-0dbf-534b-4bef-a9c7b3610ed4",
+      "batch": 362
+    },
+    "task": {
+      "name": "sample.bin",
+      "pid": 2880,
+      "tgid": 2880,
+      "guuid": "2a26664c-1c00-0000-20a4-0e1d400b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2879,
+      "tgid": 2879,
+      "guuid": "05d5444c-1c00-0000-20a4-0e1d3f0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "utc_time": "2024-11-06T21:00:13.838069213Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash",
+    "command_line": "ipv6_addrconf -n",
+    "exe": {
+      "path": "/tmp/.perf.c/ipv6_addrconf"
+    },
+    "addr": "0x7fc04298a000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "eb9418e1-ffd4-3ffc-a4ce-693e94909119",
+      "batch": 367
+    },
+    "task": {
+      "name": "ipv6_addrconf",
+      "pid": 2892,
+      "tgid": 2892,
+      "guuid": "5c956153-1c00-0000-20a4-0e1d4c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2891,
+      "tgid": 2891,
+      "guuid": "b6e15053-1c00-0000-20a4-0e1d4b0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:14.062500421Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash",
+    "command_line": "ipv6_addrconf -n",
+    "exe": {
+      "path": "/tmp/.perf.c/ipv6_addrconf"
+    },
+    "addr": "0x400000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "2afafa01-8187-19cd-4ed1-f4c1c7c2b06b",
+      "batch": 368
+    },
+    "task": {
+      "name": "ipv6_addrconf",
+      "pid": 2892,
+      "tgid": 2892,
+      "guuid": "5c956153-1c00-0000-20a4-0e1d4c0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2891,
+      "tgid": 2891,
+      "guuid": "b6e15053-1c00-0000-20a4-0e1d4b0b0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:14.062520253Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "command_line": "perfctl",
+    "exe": {
+      "path": "/tmp/.perf.c/perfctl"
+    },
+    "addr": "0x7f491c95e000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "2e9f35e9-4019-6f29-22d5-fee347eb9d78",
+      "batch": 2431
+    },
+    "task": {
+      "name": "perfctl",
+      "pid": 3145,
+      "tgid": 3145,
+      "guuid": "98bb2209-2200-0000-20a4-0e1d490c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 3144,
+      "tgid": 3144,
+      "guuid": "459cd208-2200-0000-20a4-0e1d480c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:38.295395250Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "command_line": "perfctl",
+    "exe": {
+      "path": "/tmp/.perf.c/perfctl"
+    },
+    "addr": "0x400000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "70592bb3-34ee-faf4-a6f6-403a6ac62995",
+      "batch": 2435
+    },
+    "task": {
+      "name": "perfctl",
+      "pid": 3145,
+      "tgid": 3145,
+      "guuid": "98bb2209-2200-0000-20a4-0e1d490c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 3144,
+      "tgid": 3144,
+      "guuid": "459cd208-2200-0000-20a4-0e1d480c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:38.410741010Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/sbin/sshd|/usr/bin/sudo|/tmp/sample.bin|/usr/bin/dash|/tmp/sample.bin|/usr/bin/dash|/tmp/.perf.c/ipv6_addrconf|/usr/bin/dash",
+    "command_line": "perfctl",
+    "exe": {
+      "path": "/tmp/.perf.c/perfctl"
+    },
+    "addr": "0x7f491c935000",
+    "prot": "0x5"
+  },
+  "info": {
+    "host": {
+      "uuid": "3eff9364-90b8-5293-9f42-0ea09fbefe18",
+      "name": "kunai-sandbox",
+      "container": null
+    },
+    "event": {
+      "source": "kunai",
+      "id": 40,
+      "name": "mprotect_exec",
+      "uuid": "3c7a66e5-9bc7-5d33-9531-30bc346976e1",
+      "batch": 2436
+    },
+    "task": {
+      "name": "perfctl",
+      "pid": 3145,
+      "tgid": 3145,
+      "guuid": "98bb2209-2200-0000-20a4-0e1d490c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": true
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 3144,
+      "tgid": 3144,
+      "guuid": "459cd208-2200-0000-20a4-0e1d480c0000",
+      "uid": 0,
+      "user": "?",
+      "gid": 0,
+      "group": "?",
+      "namespaces": {
+        "mnt": 4026531841
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2024-11-06T21:00:38.410799771Z"
+  }
+}

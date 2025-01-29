@@ -1,0 +1,640 @@
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2",
+    "parent_exe": "/usr/sbin/php-fpm8.2",
+    "command_line": "sh -c ls",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "da48b19a-a010-7ab8-3804-97dd284fe89b",
+      "batch": 10
+    },
+    "task": {
+      "name": "sh",
+      "pid": 2076004,
+      "tgid": 2076004,
+      "guuid": "7d7a6274-97b3-0300-9fe3-fb1364ad1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "php-fpm8.2",
+      "pid": 2074150,
+      "tgid": 2074150,
+      "guuid": "52baa3fb-50b3-0300-9fe3-fb1326a61f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:56:31.314011197Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "ls",
+    "exe": {
+      "path": "/usr/bin/ls",
+      "md5": "7987cf330ff5bb94015dfbb9eae5a99f",
+      "sha1": "d3abebe287671fe1e09e79cdab88533aa68874e4",
+      "sha256": "cb30d69b24245bf2ecdc9e7f53bbad19159999970b6d82c0c00c7d32d9e37aa4",
+      "sha512": "3fab74ebc04074621334bcec4a8c632de5cec36a505c89e990f5e0e42297bba56eefa9c6db4d73004d582f170d5871162880db28772a7144c05c17b410da4c28",
+      "size": 151344,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "bc7eb2af-75f0-da43-cef9-d2293662a386",
+      "batch": 10
+    },
+    "task": {
+      "name": "ls",
+      "pid": 2076005,
+      "tgid": 2076005,
+      "guuid": "764f6c74-97b3-0300-9fe3-fb1365ad1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2076004,
+      "tgid": 2076004,
+      "guuid": "7d7a6274-97b3-0300-9fe3-fb1364ad1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:56:31.314301737Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2",
+    "parent_exe": "/usr/sbin/php-fpm8.2",
+    "command_line": "sh -c whoami",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "77d60c61-72e8-2bfb-9174-43b4fd916108",
+      "batch": 487
+    },
+    "task": {
+      "name": "sh",
+      "pid": 2076013,
+      "tgid": 2076013,
+      "guuid": "785127c0-98b3-0300-9fe3-fb136dad1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "php-fpm8.2",
+      "pid": 2074149,
+      "tgid": 2074149,
+      "guuid": "83789dfb-50b3-0300-9fe3-fb1325a61f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:56:36.793873981Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "whoami",
+    "exe": {
+      "path": "/usr/bin/whoami",
+      "md5": "3449871cc8b6da567a47d6d689d6f651",
+      "sha1": "de6b1f2ebde10cfb75b99ec25e75c089c6462efb",
+      "sha256": "6ca7710f382d2d9e4026c2b2b4299775880e290915599ddd5d0c7d60076186a8",
+      "sha512": "c6480e059a04e3462a3a037238c33a5b9c8c43415c83ecb294edd0e5e1e643bd4c7bb3d5d108ab36701f81ed20acb22f46efd1a3524749f699882ab4fc3cfa4c",
+      "size": 39792,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "5ef6ad24-eff8-7aa6-2a85-48fb1727f90a",
+      "batch": 488
+    },
+    "task": {
+      "name": "whoami",
+      "pid": 2076014,
+      "tgid": 2076014,
+      "guuid": "a046c7c0-98b3-0300-9fe3-fb136ead1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2076013,
+      "tgid": 2076013,
+      "guuid": "785127c0-98b3-0300-9fe3-fb136dad1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:56:36.794208229Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2",
+    "parent_exe": "/usr/sbin/php-fpm8.2",
+    "command_line": "sh -c id",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "58b07098-2a30-379f-36dd-7d96db743453",
+      "batch": 2617
+    },
+    "task": {
+      "name": "sh",
+      "pid": 2076312,
+      "tgid": 2076312,
+      "guuid": "409b996f-9eb3-0300-9fe3-fb1398ae1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "php-fpm8.2",
+      "pid": 2074150,
+      "tgid": 2074150,
+      "guuid": "52baa3fb-50b3-0300-9fe3-fb1326a61f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:57:01.197891025Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "id",
+    "exe": {
+      "path": "/usr/bin/id",
+      "md5": "5a2ca6d0a7cffd7d5df8b4617beb9e43",
+      "sha1": "d89764726e5849d6f6bc84a73a0d26b4edd39c86",
+      "sha256": "a3d987dd3f9ec0610dc13b7fdccef84895628065434f44247a65ef0d2a341b3c",
+      "sha512": "373fbfbcc8c1bd95a0c5ec63553b1375bf84e2513a3046456efcafd49063d91c3248e0f60b5747df96b74ad406f5626ded389cc0627edfa8e786e7cb5760eb4f",
+      "size": 48144,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "91317de6-5ad9-cfdf-8b01-6a3786573bc2",
+      "batch": 2618
+    },
+    "task": {
+      "name": "id",
+      "pid": 2076313,
+      "tgid": 2076313,
+      "guuid": "f838ab6f-9eb3-0300-9fe3-fb1399ae1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2076312,
+      "tgid": 2076312,
+      "guuid": "409b996f-9eb3-0300-9fe3-fb1398ae1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:57:01.198201909Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "ps -a",
+    "exe": {
+      "path": "/usr/bin/ps",
+      "md5": "08a07e7517a09d2f40e2618eff4adf22",
+      "sha1": "70dee40f2790fce02816ded42db95beeb060cedb",
+      "sha256": "b2a1f7b6ae39ca71cf915d9553877df8f65e1b5ee39c4c269ee3c0d0bb282546",
+      "sha512": "4b241f252703312ee3d020087e0872aee68ed7b42479d5dcb1eb2970ef5bf8adb7df6e956e9879af5b9df14da44e5540c96d5c98bad6d193aa9308ba69b0a13d",
+      "size": 146360,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "82b38521-83e3-1d39-afa2-317201b82b02",
+      "batch": 3751
+    },
+    "task": {
+      "name": "ps",
+      "pid": 2076351,
+      "tgid": 2076351,
+      "guuid": "c8776870-a1b3-0300-9fe3-fb13bfae1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2076350,
+      "tgid": 2076350,
+      "guuid": "4431b86f-a1b3-0300-9fe3-fb13beae1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:57:14.123698962Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2",
+    "parent_exe": "/usr/sbin/php-fpm8.2",
+    "command_line": "sh -c top",
+    "exe": {
+      "path": "/usr/bin/dash",
+      "md5": "623e332d8ae2db8a2d050dcce9510b47",
+      "sha1": "b03cf680f3ff9dc5d50cee5037bc03780e14f76f",
+      "sha256": "f5adb8bf0100ed0f8c7782ca5f92814e9229525a4b4e0d401cf3bea09ac960a6",
+      "sha512": "8c884b9d6d9ee6a84ab31504f43658992dc011666d7b97e5a6460ac15dd4fa8187883a3741b5619c841aef025432dbf3375a47c738c457d17743b1e947297abd",
+      "size": 125640,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "5529a67e-1945-7299-050e-b1faf0f03873",
+      "batch": 4394
+    },
+    "task": {
+      "name": "sh",
+      "pid": 2076465,
+      "tgid": 2076465,
+      "guuid": "6dc6552d-a3b3-0300-9fe3-fb1331af1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "php-fpm8.2",
+      "pid": 2074150,
+      "tgid": 2074150,
+      "guuid": "52baa3fb-50b3-0300-9fe3-fb1326a61f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400140",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:57:21.508307511Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "top",
+    "exe": {
+      "path": "/usr/bin/top",
+      "md5": "cacf6bcf70953d709299c228cd39556b",
+      "sha1": "d437bad7ce37f5474ee5906fcc2a55e995c5c3c3",
+      "sha256": "d91eff903b36c15aee189efb6f4bb806cda308a1738b5f6bca1961ab09a9eec1",
+      "sha512": "867d60e1a6b695c8ad7e5cd4482781bd8733c226deec09e5312071622115b01fb18dd653b8efb65bf1b57c72bbbb617d03e803f89ebe5052fa40ba261050fa12",
+      "size": 134736,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "a0baf0e2-5402-4a62-0a05-a351c31d73d5",
+      "batch": 4395
+    },
+    "task": {
+      "name": "top",
+      "pid": 2076466,
+      "tgid": 2076466,
+      "guuid": "a8e1632d-a3b3-0300-9fe3-fb1332af1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2076465,
+      "tgid": 2076465,
+      "guuid": "6dc6552d-a3b3-0300-9fe3-fb1331af1f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:57:21.609325359Z"
+  }
+}
+{
+  "data": {
+    "ancestors": "/usr/lib/systemd/systemd|/usr/bin/containerd-shim-runc-v2|/usr/bin/dash|/usr/sbin/php-fpm8.2|/usr/sbin/php-fpm8.2|/usr/bin/dash",
+    "parent_exe": "/usr/bin/dash",
+    "command_line": "cp /etc/passwd /tmp/pwn",
+    "exe": {
+      "path": "/usr/bin/cp",
+      "md5": "4799bd8b4078905c8a63dfe95c88fe31",
+      "sha1": "d11e60003669bb66fef9f178e37bb34619840399",
+      "sha256": "e296487a3a8f10a1c55e56056ba4bbb2d3ca22ae625af9f0d5cebaed28e55fa4",
+      "sha512": "c16c296aa3b5242dc2eadc29fdd23880485d71e3d810b0dcc7e9968169af70b58d0c56f6def61d424384e4287465145c5b20c9d3d31085f1a104649e26aba6a6",
+      "size": 151152,
+      "error": null
+    }
+  },
+  "info": {
+    "host": {
+      "uuid": "b7ec95e3-b49f-57fa-b719-dea1c56f5448",
+      "name": "hal",
+      "container": {
+        "name": "e03676180a99",
+        "type": "docker"
+      }
+    },
+    "event": {
+      "source": "kunai",
+      "id": 1,
+      "name": "execve",
+      "uuid": "1da0b604-7dcd-74c1-584c-8f8c64f63b53",
+      "batch": 8804
+    },
+    "task": {
+      "name": "cp",
+      "pid": 2077049,
+      "tgid": 2077049,
+      "guuid": "41715de4-aeb3-0300-9fe3-fb1379b11f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400000",
+      "zombie": false
+    },
+    "parent_task": {
+      "name": "sh",
+      "pid": 2077048,
+      "tgid": 2077048,
+      "guuid": "7e4a41e4-aeb3-0300-9fe3-fb1378b11f00",
+      "uid": 33,
+      "user": "www-data",
+      "gid": 33,
+      "group": "www-data",
+      "namespaces": {
+        "mnt": 4026534002
+      },
+      "flags": "0x400100",
+      "zombie": false
+    },
+    "utc_time": "2025-01-27T08:58:11.853738613Z"
+  }
+}
